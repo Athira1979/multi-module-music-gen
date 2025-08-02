@@ -20,6 +20,7 @@ def run_eval(model_path, midi_dir, csv_path):
         for batch in loader:
             if batch is None:
                 continue
+                
             x, y_rhythm, _, _ = batch
             x, y_rhythm = x.to(device), y_rhythm.to(device)
             rhythm_pred, _ = model(x)
@@ -36,3 +37,4 @@ def run_eval(model_path, midi_dir, csv_path):
     print(f"Accuracy: {acc:.4f} | Precision: {prec:.4f} | Recall: {rec:.4f} | F1: {f1:.4f}")
     pd.DataFrame([{"accuracy": acc, "precision": prec, "recall": rec, "f1_score": f1}]).to_csv(csv_path, index=False)
     print(f"[INFO] Evaluation metrics saved to {csv_path}")
+
