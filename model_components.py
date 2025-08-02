@@ -10,8 +10,7 @@ class SqueezeExciteBlock(nn.Module):
             nn.Linear(channels, channels // reduction),
             nn.ReLU(inplace=True),
             nn.Linear(channels // reduction, channels),
-            nn.Sigmoid()
-        )
+            nn.Sigmoid())
 
     def forward(self, x):
         b, c, _ = x.size()
@@ -187,3 +186,4 @@ class FusionLayer(nn.Module):
         x = self.act(self.fc1(x))
         x = self.norm(self.fc2(x))
         return self.act(x).permute(0, 2, 1)
+
