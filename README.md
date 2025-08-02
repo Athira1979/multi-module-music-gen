@@ -69,18 +69,6 @@ Evaluate the model:
 python main.py --mode eval
 
 
-📜 License
-This project is licensed under the MIT License.
 
-📖 Citation
-If you use this work in your research, please cite:
 
-bibtex
-Copy
-Edit
-@article{musicgen2025,
-  title={Enhancing AI Music Generation with Multi-Module Neural Networks: A Novel Approach to Chord, Rhythm, and Pitch Synthesis},
-  author={Your Name},
-  year={2025}
-}
 
