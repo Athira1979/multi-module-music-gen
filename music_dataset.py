@@ -47,6 +47,7 @@ class MusicDataset(Dataset):
             for instrument in midi.instruments:
                 if instrument.is_drum:
                     continue
+                    
                 for note in instrument.notes:
                     notes.append([note.pitch, note.velocity, int(note.start * 100)])
             notes = np.array(sorted(notes, key=lambda x: x[2])) if notes else np.zeros((0, 3))
@@ -117,3 +118,4 @@ class MusicDataset(Dataset):
             one_hot[idx] = 1
             one_hot_chords.append(one_hot)
         return np.array(one_hot_chords)
+
