@@ -26,6 +26,7 @@ This project introduces a Multi-Module Neural Network (MNN) for automatic music 
 The result is a highly expressive, scalable music generation system that outputs MIDI files or audio-ready compositions.
 
 🚀 Features
+
 Multi-module neural architecture for chords, rhythm, and pitch
 
 High accuracy and harmonic coherence
@@ -40,6 +41,7 @@ Automatic evaluation (Accuracy, Precision, Recall, F1, BRA, CTR)
 
 
 # Clone repository
+
 https://github.com/Athira1979/multi-module-music-gen.git
 
 
@@ -52,6 +54,7 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # Install dependencies
+
 pip install -r requirements.txt
 
 🎹 Usage
