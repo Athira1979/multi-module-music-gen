@@ -25,9 +25,11 @@ def safe_collate(batch):
 def evaluate(preds, labels):
     preds = torch.argmax(preds, dim=1).cpu().numpy()
     labels = labels.cpu().numpy()
+    
     return (
         accuracy_score(labels, preds),
         precision_score(labels, preds, average='macro', zero_division=0),
         recall_score(labels, preds, average='macro', zero_division=0),
         f1_score(labels, preds, average='macro', zero_division=0)
     )
+
