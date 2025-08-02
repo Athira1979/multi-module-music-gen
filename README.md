@@ -3,8 +3,8 @@ A Novel Approach to Chord, Rhythm, and Pitch Synthesis
 
 
 
-
 📌 Overview
+
 Automatic music generation is a rapidly evolving area in artificial intelligence, but current approaches often struggle to:
 
 Capture temporal dependencies across sequences
@@ -34,86 +34,40 @@ High accuracy and harmonic coherence
 
 Support for MIDI-based dataset training
 
-GPU-accelerated training with PyTorch
-
 Automatic evaluation (Accuracy, Precision, Recall, F1, BRA, CTR)
 
-📊 Experimental Results
-Metric	Score
-Accuracy	98.98%
-Precision	97.83%
-Recall	96.92%
-F1 Score	98.13%
-Bar Rhythm Analysis (BRA)	98.52%
-Chord Tone Ratio (CTR)	0.983
-
-🛠️ Architecture
-plaintext
-Copy
-Edit
-Input (MIDI) 
-     │
-     ▼
-[Temporal Graph Dilated Convolution]  → Captures chord dependencies
-     │
-     ▼
-[Rhythm Generator - MobileNet TCN]    → Rhythmic patterns
-     │
-     ▼
-[Pitch Generator - Sparse Transformer] → Pitch alignment with rhythm
-     │
-     ▼
-[Fusion & Post-Processing] → Timing, velocity, chord harmonization
-     │
-     ▼
-Output (MIDI/Audio)
-📂 Project Structure
-bash
-Copy
-Edit
-MUSIC_GENERATION/
-│
-├── dataset/               # MIDI dataset
-├── checkpoints/           # Model weights
-├── MUSIC_GENERATION/
-│   ├── dataset.py         # Dataset loader
-│   ├── model_components.py # Model modules (TGDC, TCN, Transformer)
-│   ├── train.py           # Training script
-│   ├── evaluate.py        # Evaluation script
-│   ├── config.py          # Configurations
-│   └── main.py            # Entry point
-│
-├── results.csv            # Evaluation metrics
-└── README.md              # Project documentation
 🔧 Installation
-bash
-Copy
-Edit
+
+
 # Clone repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+https://github.com/Athira1979/multi-module-music-gen.git
+
+
+cd multi-module-music-gen
 
 # Create virtual environment
+
 python -m venv .venv
+
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
 🎹 Usage
+
+
 Train the model:
-bash
-Copy
-Edit
-python MUSIC_GENERATION/main.py
-# Enter mode: train
+
+
+python main.py --mode train
+
+
 Evaluate the model:
-bash
-Copy
-Edit
-python MUSIC_GENERATION/main.py
-# Enter mode: eval
-🏆 Keywords
-Music Generation Multi-Module Neural Network Temporal Graph Dilated Convolution MobileNet TCN Sparse Transformer MIDI
+
+
+python main.py --mode eval
+
 
 📜 License
 This project is licensed under the MIT License.
@@ -129,4 +83,4 @@ Edit
   author={Your Name},
   year={2025}
 }
-Would you also like me to add a diagram image (architecture flow) in the README (auto-generated
+
