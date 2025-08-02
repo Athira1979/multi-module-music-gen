@@ -19,3 +19,5 @@ class MusicGenModel(nn.Module):
         rhythm_out = self.rhythm_head(fused)
         pitch_out = self.pitch_head(fused)
         return rhythm_out, pitch_out
+
+
