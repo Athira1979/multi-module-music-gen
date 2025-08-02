@@ -21,6 +21,7 @@ def train(midi_dir):
         for batch in loader:
             if batch is None:
                 continue
+                
             x, y_rhythm, y_pitch, _ = batch
             x, y_rhythm, y_pitch = x.to(device), y_rhythm.to(device), y_pitch.to(device)
             rhythm_pred, pitch_pred = model(x)
@@ -32,3 +33,4 @@ def train(midi_dir):
 
         print(f"[Epoch {epoch+1}] Loss: {total_loss / len(loader):.4f}")
         torch.save(model.state_dict(), MODEL_PATH)
+
