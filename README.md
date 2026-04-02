@@ -1,4 +1,4 @@
-🎶 Enhancing AI Music Generation with Multi-Module Neural Networks
+#🎶 Enhancing AI Music Generation with Multi-Module Neural Networks
 A Novel Approach to Chord, Rhythm, and Pitch Synthesis
 
 
@@ -42,20 +42,18 @@ Automatic evaluation (Accuracy, Precision, Recall, F1, BRA, CTR)
 
 # Clone repository
 
-https://github.com/Athira1979/multi-module-music-gen.git
-
-
-cd multi-module-music-gen
+```https://github.com/Athira1979/multi-module-music-gen.git```
+```cd multi-module-music-gen```
 
 # Create virtual environment
 
-python -m venv .venv
+```python -m venv .venv```
 
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # Install dependencies
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 🎹 Usage
 
@@ -63,13 +61,13 @@ pip install -r requirements.txt
 Train the model:
 
 
-python main.py --mode train
+```python main.py --mode train```
 
 
 Evaluate the model:
 
 
-python main.py --mode eval
+```python main.py --mode eval```
 
 
 
