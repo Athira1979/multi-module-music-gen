@@ -1,9 +1,8 @@
-#🎶 Enhancing AI Music Generation with Multi-Module Neural Networks
-A Novel Approach to Chord, Rhythm, and Pitch Synthesis
+ # Enhancing AI Music Generation with Multi-Module Neural Networks A Novel Approach to Chord, Rhythm, and Pitch Synthesis 
 
 
 
-📌 Overview
+🎶 📌 Overview
 
 Automatic music generation is a rapidly evolving area in artificial intelligence, but current approaches often struggle to:
 
