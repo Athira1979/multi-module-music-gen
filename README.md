@@ -39,21 +39,21 @@
 
 ### Clone repository
 
-``` Bash
+```bash
 https://github.com/Athira1979/multi-module-music-gen.git
 cd multi-module-music-gen
 ```
 
 ### Create virtual environment
 
-``` Bash
+```bash
 python -m venv .venv
 python  .venv\Scripts\activate # activate in windows
 ```
 
 ### Install requirements
 
-``` Bash
+```bash
 pip install -r requirements.txt
 ```
 
@@ -61,13 +61,13 @@ pip install -r requirements.txt
 
 ### Train the model
 
-``` Bash
+```bash
 python main.py --mode train
 ```
 
 ### Evaluate the model
 
-``` Bash
+```bash
 python main.py --mode eval
 ```
 
